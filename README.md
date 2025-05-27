@@ -20,29 +20,29 @@ Start by importing the library by using `FirstDate` (the struct) and `FirstDateO
 ## API
 
 ### Fields
-day - u8 - The current day of the first-date.
+`day` - u8 - The current day of the first-date.
 
-hour - u8 - The current hour of the first-date.
+`hour` - u8 - The current hour of the first-date.
 
-month - u8 - The current month of the first-date.
+`month` - u8 - The current month of the first-date.
 
-year - u16 - The current year of the first-date.
+`year` - u16 - The current year of the first-date.
 
-minute - u8 - The current minute of the first-date.
+`minute` - u8 - The current minute of the first-date.
 
-second - u8 - The current second of the first-date.
+`second` - u8 - The current second of the first-date.
 
-millisecond - u16 -The current millisecond of the first-date.
+`millisecond` - u16 -The current millisecond of the first-date.
 
-is_leap_year - bool - Indicates if the current year is a leap year or not.
+`is_leap_year` - bool - Indicates if the current year is a leap year or not.
 
-month_name - String - Then english name of the current month.
+`month_name` - String - Then english name of the current month.
 
-timezone_name - String - The name of the current timezone (based on system settings), for example "America/Chicago". This ONLY works on linux (or maybe Unix systems) and will fail silently if not present.
+`timezone_name` - String - The name of the current timezone (based on system settings), for example "America/Chicago". This ONLY works on linux (or maybe Unix systems) and will fail silently if not present.
 
-timezone_offset - Option<i8> - The numerical offset of the current timezone (based on system settings), for example "America/Chicago" is -5 (not in daylight savings time). This ONLY works on linux (or maybe Unix systems) and will fail silently and set the field to `None` if not present.
+`timezone_offset` - Option<i8> - The numerical offset of the current timezone (based on system settings), for example "America/Chicago" is -5 (not in daylight savings time). This ONLY works on linux (or maybe Unix systems) and will fail silently and set the field to `None` if not present.
 
-is_daylight_savings - Option<bool> - Inidcates if the date accounts for daylight savings time (by adding 1 hour to the time). While the dates will vary this period is between early March and early November, following the standard rules for DST. The library queries the Unix daylight savings time database to determing the rules based on the year. This ONLY works on Unix, it will fail silently and set the field to `None` otherwise.
+`is_daylight_savings` - Option<bool> - Inidcates if the date accounts for daylight savings time (by adding 1 hour to the time). While the dates will vary this period is between early March and early November, following the standard rules for DST. The library queries the Unix daylight savings time database to determing the rules based on the year. This ONLY works on Unix, it will fail silently and set the field to `None` otherwise.
 
 ### Methods
 #### `FirstDate::now()`
