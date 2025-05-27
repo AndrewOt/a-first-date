@@ -1,5 +1,5 @@
 # A First Date
-**## NOTE: THIS IS NOT A PRODUCTION READY LIBRARY!**
+**NOTE: THIS IS NOT A PRODUCTION READY LIBRARY!**
 
 **This is a library for learning and exploring ideas, please do not use this in production (see below for known issues).**
 
