@@ -6,7 +6,7 @@ use std::env::consts::OS;
 
 mod date_utilities;
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct FirstDate {
     pub day: u8,
     pub hour: u8,
